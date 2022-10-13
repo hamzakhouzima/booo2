@@ -21,9 +21,9 @@
 	<div id="app" class="app-without-sidebar">
 		<!-- BEGIN #content -->
 		<div id="content" class="app-content main-style">
-			<div class="container-fluid position-relative  ">
+			<div class="container-fluid  position-relative "> <!--position-relative-->
 				<div>
-					<ol class="list-group list-group-horizontal position-absolute ">
+					<ol class="list-group list-group-horizontal position-absolute  "> <!--position-absolute-->
 						<li class="list-group-item"><a href="javascript:;">Home</a></li>
 						<li class="list-group-item">Scrum Board </li>
 					</ol>
@@ -34,22 +34,24 @@
 					<!-- END page-header -->
 				</div>
 				
-				<div class="position-absolute end-0 translate-middle-y">
+				<div class="position-absolute top-0 end-0 translate-middle-y">
 				
 					<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
 						<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
 					  </svg> -->
 				
 					
-					<button class=" btn  btn-success  "><i class="bi bi-plus "></i> Add Task</a>
+					<button class=" btn  btn-success " ><i class="bi bi-plus "></i> Add Task</a>
 				</div>
 			</div>
 			
  				<div class="row "> 
-				<div class="col-4 col-md-4 ">
+				 <div class="col-4 col-md-4 ">
 					<div class="card ">
 						<div class="card-header bg-dark " >
 							<h4 class="text-white my-30 " style="border-radius: 5px 5px 0px 0px;">To do (<span id="to-do-tasks-count">5</span>)</h4>
+
+
 
 						</div>
 						<div class=" card-body p-0 bg-light " id="to-do-tasks">
@@ -141,150 +143,150 @@
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<div class="">
-							<h4 class="">In Progress (<span id="in-progress-tasks-count">4</span>)</h4>
+				<div class="col-4 col-md-4">
+					<div class="card">
+						<div class="card-header bg-dark ">
+							<h4 class="  text-white ">In Progress (<span id="in-progress-tasks-count">4</span>)</h4>
 
 						</div>
-						<div class="" id="in-progress-tasks">
+						<div class="card-body" id="in-progress-tasks">
 							<!-- IN PROGRESS TASKS HERE -->
-							<button class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom ">
+								<div class="start p-2">
+									<i class="bi bi-question-circle  text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Describe steps to reproduce an issue</div>
-									<div class="">
-										<div class="">#6 created in 2022-10-08</div>
-										<div class="" title="including as many details as possible.">including as many details as possible.</div>
+								<div class="text-start">
+									<div class="fw-bolder">Describe steps to reproduce an issue</div>
+									<div class="start-10">
+										<div class="fw-light">#6 created in 2022-10-08</div>
+										<div class="fw-bold" title="including as many details as possible.">including as many details as possible.</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
-									</div>
-								</div>
-							</button>
-							<button class="">
-								<div class="">
-									<i class=""></i> 
-								</div>
-								<div class="">
-									<div class="">Provide access</div>
-									<div class="">
-										<div class="">#7 created in 2022-10-08</div>
-										<div class="" title="to the affected account and services if possible. It might be hard to reproduce the exact environment on a local machine.">to the affected account and services if possible. It mi...</div>
-									</div>
-									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
-							<button class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom ">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Provide environment information</div>
-									<div class="">
-										<div class="">#8 created in 2022-10-08</div>
-										<div class="" title="i.e., browser version, operating system version etc. Sometimes a list of installed browser plugins and extensions might be helpful as well.">i.e., browser version, operating system version etc. So...</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide access</div>
+									<div class="start-10">
+										<div class="fw-light">#7 created in 2022-10-08</div>
+										<div class="fw-bold" title="to the affected account and services if possible. It might be hard to reproduce the exact environment on a local machine.">to the affected account and services if possible. It mi...</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
-							<button class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom ">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Provide a link to an exception and/or a stack trace</div>
-									<div class="">
-										<div class="">#9 created in 2022-10-08</div>
-										<div class="" title="as investigating those is usually the first step to take in resolving the problem.">as investigating those is usually the first step to tak...</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide environment information</div>
+									<div class="start-10">
+										<div class="fw-light">#8 created in 2022-10-08</div>
+										<div class="fw-bold" title="i.e., browser version, operating system version etc. Sometimes a list of installed browser plugins and extensions might be helpful as well.">i.e., browser version, operating system version etc. So...</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
+									</div>
+								</div>
+							</button>
+							<button class="btn d-flex p-0 border-bottom">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
+								</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide a link to an exception and/or a stack trace</div>
+									<div class="start-10">
+										<div class="fw-light">#9 created in 2022-10-08</div>
+										<div class="fw-bold" title="as investigating those is usually the first step to take in resolving the problem.">as investigating those is usually the first step to tak...</div>
+									</div>
+									<div class="">
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<div class="">
-							<h4 class="">Done (<span id="done-tasks-count">4</span>)</h4>
+				<div class="col-4 col-md-4">
+					<div class="card">
+						<div class="card-header bg-dark">
+							<h4 class="text-white">Done (<span id="done-tasks-count">4</span>)</h4>
 
 						</div>
-						<div class=" " id="done-tasks">
+						<div class=" card-body" id="done-tasks">
 							<!-- DONE TASKS HERE -->
-							<button class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Provide access to logs</div>
-									<div class="">
-										<div class="">#10 created in 2022-10-08</div>
-										<div class="" title="as they can be helpful in reproducing the steps that caused the problem in the first place.">as they can be helpful in reproducing the steps that ca...</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide access to logs</div>
+									<div class="start-10">
+										<div class="fw-light">#10 created in 2022-10-08</div>
+										<div class="fw-bold" title="as they can be helpful in reproducing the steps that caused the problem in the first place.">as they can be helpful in reproducing the steps that ca...</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
-									</div>
-								</div>
-							</button>
-							<button class="">
-								<div class="">
-									<i class=""></i> 
-								</div>
-								<div class="">
-									<div class="">Provide access to the affected server or database dump</div>
-									<div class="">
-										<div class="">#11 created in 2022-10-08</div>
-										<div class="" title="If it is possible and when it does not violate security policies, it is usually helpful for the developer to access the original data that might have played a role in the problem.">If it is possible and when it does not violate security...</div>
-									</div>
-									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
-							<button class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Make a screencast</div>
-									<div class="">
-										<div class="">#12 created in 2022-10-08</div>
-										<div class="" title="It is not always necessary, but many times a short screencast (or at least a screenshot) says more than a thousand words. While working on MacOS you can use QuickTime Player for the purpose but there are plenty of tools available for other operating systems as well.">It is not always necessary, but many times a short scre...</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide access to the affected server or database dump</div>
+									<div class="start-10">
+										<div class="fw-light">#11 created in 2022-10-08</div>
+										<div class="fw-bold" title="If it is possible and when it does not violate security policies, it is usually helpful for the developer to access the original data that might have played a role in the problem.">If it is possible and when it does not violate security...</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
-							<button  class="">
-								<div class="">
-									<i class=""></i> 
+							<button class="btn d-flex p-0 border-bottom">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
 								</div>
-								<div class="">
-									<div class="">Provide contact information</div>
-									<div class="">
-										<div class="">#13 created in 2022-10-08</div>
-										<div class="" title="of the person that reported the bug. This will not always be possible, but in some cases it might be advantageous and most effective if a developer can have a chat with a person that actually experienced the bug, especially if the steps to reproduce a problem are not deterministic.">of the person that reported the bug. This will not alwa...</div>
+								<div class="text-start">
+									<div class="fw-bolder">Make a screencast</div>
+									<div class="start-10">
+										<div class="fw-light">#12 created in 2022-10-08</div>
+										<div class="fw-bold" title="It is not always necessary, but many times a short screencast (or at least a screenshot) says more than a thousand words. While working on MacOS you can use QuickTime Player for the purpose but there are plenty of tools available for other operating systems as well.">It is not always necessary, but many times a short scre...</div>
 									</div>
 									<div class="">
-										<span class="">High</span>
-										<span class="">Bug</span>
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
+									</div>
+								</div>
+							</button>
+							<button  class="btn d-flex p-0 border-bottom">
+								<div class="start p-2">
+									<i class="bi bi-question-circle text-success fs-2"></i> 
+								</div>
+								<div class="text-start">
+									<div class="fw-bolder">Provide contact information</div>
+									<div class="start-10">
+										<div class="fw-light">#13 created in 2022-10-08</div>
+										<div class="fw-bold" title="of the person that reported the bug. This will not always be possible, but in some cases it might be advantageous and most effective if a developer can have a chat with a person that actually experienced the bug, especially if the steps to reproduce a problem are not deterministic.">of the person that reported the bug. This will not alwa...</div>
+									</div>
+									<div class="">
+										<span class="badge bg-primary">High</span>
+										<span class="badge bg-secondary">Bug</span>
 									</div>
 								</div>
 							</button>
